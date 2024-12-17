@@ -3,27 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>My Portfoio Website</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: black;
+        }
+
+        header{
+            padding:5px;
+            margin-top: 0;
+            background-color: rgb(255, 255, 255);
+            color: blueviolet;
+        }
+
+        header .logo a h1{
+            display:inline-block;
+            color: rgb(0, 0, 0);
+            text-decoration:underline;
+        }
+
+        header .logo a h1:hover{
+            margin-top: 0;
+            height: 35px;
+            width: 225px;
+            background-color: #1d9ceb;
+            color: black;
+        }
+
+        header .logo a h1:active{
+            color:orangered;
+        }
+
+        @media(min-width: 600px){
+           body{
+            margin: 0;
+           }
+
+
+        }
+
+    </style>
 </head>
 <body>
     <header>
-    <div class="logo">
-        <a href="index.html">
-        <h1>Pramesh Gurav</h1>
-    </a>
-    </div>
-    <nav>
-        <a href="#home">HOME</a>
-        <a href="about.html">ABOUT ME</a>
-        <a href="education.html">EDUCATION</a>
-        <a href="services.html">SERVICES</a>
-        <a href="portfolio.html">PORTFOLIO</a>
-        <a href="contact.html">CONTACT</a>
-    </nav>
-</header>
+        <div class="logo">
+            <a href="index.html">
+            <h1>Pramesh Gurav</h1>
+        </a>
+        </div>
+        <nav>
+            <label for="home">
+                <a href="index.html">HOME</a>
+            </label>
 
+            <label>
+            <a href="about.html">ABOUT ME</a>
+            </label>
 
-<script src="../JS/script.js"></script>
+            <label for="education">
+                <a href="education.html">EDUCATION</a>
+            </label>
+
+            <label for="services">
+                <a href="services.html">SERVICES</a>
+            </label>
+
+            <label for="portfolio">
+            <a href="portfolio.html">PORTFOLIO</a>
+        </label>
+
+            <label for="contact">
+                <a href="contact.html">CONTACT</a>
+            </label>
+        </nav>
+    </header>
 </body>
 </html>
