@@ -11,28 +11,24 @@
         }
 
         header{
-            padding:5px;
+            padding:0px;
             margin-top: 0;
             background-color: rgb(255, 255, 255);
             color: blueviolet;
         }
 
         header .logo a h1{
-            display:inline-block;
+            display: inline-flex;
             color: rgb(0, 0, 0);
-            text-decoration:underline;
-        }
-
-        header .logo a h1:hover{
-            margin-top: 0;
-            height: 35px;
-            width: 225px;
-            background-color: #1d9ceb;
-            color: black;
+            text-decoration: none;
         }
 
         header .logo a h1:active{
             color:orangered;
+        }
+
+        body{
+            background-color: rgb(54, 161, 185);
         }
 
         @media(min-width: 600px){
@@ -40,6 +36,9 @@
             margin: 0;
            }
 
+           lable{
+            padding: 10px;
+           }
 
         }
 
@@ -49,7 +48,7 @@
     <header>
         <div class="logo">
             <a href="index.html">
-            <h1>Pramesh Gurav</h1>
+            <h1><b>PG</b></h1>
         </a>
         </div>
         <nav>
@@ -78,5 +77,13 @@
             </label>
         </nav>
     </header>
+    <main>
+        <div class="me"><h1 style="color:rgb(250, 133, 24);">Pramesh Gurav</h1>
+        <p>Hi!</p>
+        </div>
+        
+    </main>
+
+    
 </body>
 </html>
